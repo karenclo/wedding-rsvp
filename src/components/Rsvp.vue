@@ -1,15 +1,15 @@
 <template>
-  <div class="hello">
+  <div class="rsvp">
     <h1>{{ msg }}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Rsvp',
   data () {
     return {
-      msg: 'Coming Soon!'
+      msg: 'RSVP'
     }
   }
 }
