@@ -11,10 +11,5 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>',
-  methods: {
-    afterLeave () {
-      this.$root.$emit('triggerScroll')
-    }
-  }
+  template: '<App/>'
 })
