@@ -1,6 +1,10 @@
 // https://eslint.org/docs/user-guide/configuring
 
 module.exports = {
+  globals: {
+    "$": true,
+    "jQuery": true
+  },
   root: true,
   parserOptions: {
     parser: 'babel-eslint'

@@ -1,6 +1,6 @@
 <template>
   <div class="travel-info">
-    <h1>{{ msg }}</h1>
+    {{ msg }}
   </div>
 </template>
 
@@ -14,3 +14,10 @@ export default {
   }
 }
 </script>
+
+<style>
+  .travel-info {
+    background-color: turquoise;
+    height: 300px;
+  }
+</style>

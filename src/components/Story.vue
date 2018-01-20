@@ -1,6 +1,6 @@
 <template>
   <div class="story">
-    <h1>{{ msg }}</h1>
+    {{ msg }}
   </div>
 </template>
 
@@ -14,3 +14,10 @@ export default {
   }
 }
 </script>
+
+<style>
+  .story {
+    background-color: bisque;
+    height: 300px;
+  }
+</style>

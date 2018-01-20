@@ -1,6 +1,6 @@
 <template>
   <div class="wedding-day">
-    <h1>{{ msg }}</h1>
+    {{ msg }}
   </div>
 </template>
 
@@ -14,3 +14,10 @@ export default {
   }
 }
 </script>
+
+<style>
+  .wedding-day {
+    background-color: lightsteelblue;
+    height: 300px;
+  }
+</style>

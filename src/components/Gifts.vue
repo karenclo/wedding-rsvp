@@ -1,16 +1,23 @@
 <template>
-  <div class="registry">
-    <h1>{{ msg }}</h1>
+  <div class="gifts">
+    {{ msg }}
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Registry',
+  name: 'Gifts',
   data () {
     return {
-      msg: 'Registry'
+      msg: 'Gifts'
     }
   }
 }
 </script>
+
+<style>
+  .gifts {
+    background-color: aquamarine;
+    height: 300px;
+  }
+</style>

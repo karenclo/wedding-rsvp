@@ -2,12 +2,12 @@
   <div class="container">
     <div id="header">
       <ul id="nav">
-        <li class="home-nav" v-on:click="scrollToSection">HOME</li>
-        <li class="story-nav">STORY</li>
-        <li class="wedding-nav">WEDDING DAY</li>
-        <li class="travel-nav">TRAVEL INFO</li>
-        <li class="rsvp-nav">RSVP</li>
-        <li class="gifts-nav">GIFTS</li>
+        <li class="home-nav" v-on:click="scrollToSection('.home')">HOME</li>
+        <li class="story-nav" v-on:click="scrollToSection('.story')">STORY</li>
+        <li class="wedding-nav" v-on:click="scrollToSection('.wedding-day')">WEDDING DAY</li>
+        <li class="travel-nav" v-on:click="scrollToSection('.travel-info')">TRAVEL INFO</li>
+        <li class="rsvp-nav" v-on:click="scrollToSection('.rsvp')">RSVP</li>
+        <li class="gifts-nav" v-on:click="scrollToSection('.gifts')">GIFTS</li>
       </ul>
     </div>
     <div>
@@ -23,7 +23,7 @@
       <TravelInfo></TravelInfo>
     </div>
     <div>
-      <RSVP></RSVP>
+      <Rsvp></Rsvp>
     </div>
     <div>
       <Gifts></Gifts>
@@ -42,8 +42,10 @@ import Gifts from '@/components/Gifts'
 export default {
   name: 'Container',
   methods: {
-    scrollToSection: function () {
-      alert('blah')
+    scrollToSection: function (section) {
+      $('html, body').animate({
+        scrollTop: $(section).offset().top
+      }, 750)
     }
   },
   components: {
@@ -70,7 +72,7 @@ export default {
     z-index: 1;
   }
   ul {
-    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     display: block;
     padding: 0;
     text-align: center;

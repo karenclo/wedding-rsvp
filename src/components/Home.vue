@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>{{ msg }}</h1>
+    {{ msg }}
   </div>
 </template>
 
@@ -14,3 +14,10 @@ export default {
   }
 }
 </script>
+
+<style>
+  .home {
+    background-color: lightblue;
+    height: 300px;
+  }
+</style>
