@@ -1,21 +1,21 @@
 <template>
-  <div class="rsvp">
-    {{ msg }}
+  <div class="rsvp section">
+    <div class="content">
+      <div class="title">
+        RSVP
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Rsvp',
-  data () {
-    return {
-      msg: 'RSVP'
-    }
-  }
+  name: 'Rsvp'
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+  @import '../stylesheets/header.scss';
   .rsvp {
     background-color: pink;
     height: 100%;

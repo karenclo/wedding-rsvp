@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
+  <div class="home section">
     <div class="content">
-      <div class="main">
+      <div class="title">
         Karen + Jonathan
       </div>
       <div class="date">
@@ -13,30 +13,20 @@
 
 <script>
 export default {
-  name: 'Home',
-  data () {
-    return {
-      msg: 'Home'
-    }
-  }
+  name: 'Home'
 }
 </script>
 
-<style lang="scss">
-.home {
-  background-color: lightblue;
-  height: 100%;
-  position: relative;
-  padding-top: 70px;
+<style lang="scss" scoped>
+  @import '../stylesheets/header.scss';
+  .home {
+    background-color: lightblue;
+    height: 100%;
+    position: relative;
 
-  .main {
-    font-family: 'Amatic SC', cursive;
-    font-size: 150px;
+    .date {
+      font-family: 'Amatic SC', cursive;
+      font-size: 75px;
+    }
   }
-
-  .date {
-    font-family: 'Amatic SC', cursive;
-    font-size: 75px;
-  }
-}
 </style>

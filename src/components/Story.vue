@@ -1,21 +1,21 @@
 <template>
-  <div class="story">
-    {{ msg }}
+  <div class="story section">
+    <div class="content">
+      <div class="title">
+        Story
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Story',
-  data () {
-    return {
-      msg: 'Story'
-    }
-  }
+  name: 'Story'
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+  @import '../stylesheets/header.scss';
   .story {
     background-color: bisque;
     height: 100%;

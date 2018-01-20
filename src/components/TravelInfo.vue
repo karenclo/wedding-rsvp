@@ -1,21 +1,21 @@
 <template>
-  <div class="travel-info">
-    {{ msg }}
+  <div class="travel-info section">
+    <div class="content">
+      <div class="title">
+        Travel Info
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'TravelInfo',
-  data () {
-    return {
-      msg: 'Travel Info'
-    }
-  }
+  name: 'TravelInfo'
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+  @import '../stylesheets/header.scss';
   .travel-info {
     background-color: turquoise;
     height: 100%;

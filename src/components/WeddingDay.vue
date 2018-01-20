@@ -1,21 +1,21 @@
 <template>
-  <div class="wedding-day">
-    {{ msg }}
+  <div class="wedding-day section">
+    <div class="content">
+      <div class="title">
+        Wedding Day
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'WeddingDay',
-  data () {
-    return {
-      msg: 'Wedding Day'
-    }
-  }
+  name: 'WeddingDay'
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+  @import '../stylesheets/header.scss';
   .wedding-day {
     background-color: lightsteelblue;
     height: 100%;

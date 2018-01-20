@@ -47,34 +47,41 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
   .container {
     height: 100%;
     position: relative;
-  }
-  #header {
-    position: fixed;
-    top: 10px;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    z-index: 1;
-  }
-  ul {
-    font-family: 'Josefin Slab', serif;
-    display: block;
-    padding: 0;
-    text-align: center;
+    #header {
+      position: fixed;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      z-index: 1;
 
-  }
-  #nav li {
-    display: inline;
-    margin: 15px;
-    color: black;
-    font-size: 15px;
-  }
+      ul {
+        font-family: 'Josefin Slab', serif;
+        display: block;
+        padding: 0;
+        text-align: center;
 
-  #nav li:hover {
-    color: #bebebe;
+      }
+
+      #nav li {
+        display: inline;
+        margin: 15px;
+        color: black;
+        font-size: 15px;
+
+        &:hover {
+           color: white;
+           cursor: pointer;
+        }
+
+        &:focus {
+          color: white
+        }
+      }
+    }
   }
 </style>
