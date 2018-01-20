@@ -54,7 +54,7 @@ export default {
   }
   #header {
     position: fixed;
-    top: 0;
+    top: 10px;
     left: 0;
     width: 100%;
     margin: 0;
@@ -62,8 +62,6 @@ export default {
   }
   ul {
     font-family: 'Josefin Slab', serif;
-
-    /*font-weight: bold;*/
     display: block;
     padding: 0;
     text-align: center;
