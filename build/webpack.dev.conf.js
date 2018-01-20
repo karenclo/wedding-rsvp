@@ -67,7 +67,16 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     ]),
     new webpack.ProvidePlugin({
       $: 'jquery',
+      jquery: 'jquery',
+      'window.jQuery': 'jquery',
       jQuery: 'jquery'
+    }),
+    new webpack.LoaderOptionsPlugin({
+      vue: {
+        loaders: {
+          scss: 'style!css!sass'
+        }
+      }
     })
   ]
 })

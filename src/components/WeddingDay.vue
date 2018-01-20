@@ -18,6 +18,7 @@ export default {
 <style>
   .wedding-day {
     background-color: lightsteelblue;
-    height: 300px;
+    height: 100%;
+    position: relative;
   }
 </style>

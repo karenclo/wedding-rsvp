@@ -18,6 +18,7 @@ export default {
 <style>
   .rsvp {
     background-color: pink;
-    height: 300px;
+    height: 100%;
+    position: relative;
   }
 </style>

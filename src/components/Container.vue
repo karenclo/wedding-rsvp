@@ -10,24 +10,12 @@
         <li class="gifts-nav" v-on:click="scrollToSection('.gifts')">GIFTS</li>
       </ul>
     </div>
-    <div>
-      <Home></Home>
-    </div>
-    <div>
-      <Story></Story>
-    </div>
-    <div>
-      <WeddingDay></WeddingDay>
-    </div>
-    <div>
-      <TravelInfo></TravelInfo>
-    </div>
-    <div>
-      <Rsvp></Rsvp>
-    </div>
-    <div>
-      <Gifts></Gifts>
-    </div>
+    <Home></Home>
+    <Story></Story>
+    <WeddingDay></WeddingDay>
+    <TravelInfo></TravelInfo>
+    <Rsvp></Rsvp>
+    <Gifts></Gifts>
   </div>
 </template>
 
@@ -60,19 +48,22 @@ export default {
 </script>
 
 <style>
+  .container {
+    height: 100%;
+    position: relative;
+  }
   #header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 63px;
     margin: 0;
-    background-color: #383838;
-    opacity: 0.7;
     z-index: 1;
   }
   ul {
-    font-weight: bold;
+    font-family: 'Josefin Slab', serif;
+
+    /*font-weight: bold;*/
     display: block;
     padding: 0;
     text-align: center;
@@ -81,8 +72,8 @@ export default {
   #nav li {
     display: inline;
     margin: 15px;
-    color: #ffff;
-    font-size: 20px;
+    color: black;
+    font-size: 15px;
   }
 
   #nav li:hover {

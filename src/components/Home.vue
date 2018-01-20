@@ -1,6 +1,11 @@
 <template>
   <div class="home">
-    {{ msg }}
+    <div class="main">
+      Karen + Jonathan
+    </div>
+    <div class="date">
+      10.12.2019
+    </div>
   </div>
 </template>
 
@@ -15,9 +20,20 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
   .home {
     background-color: lightblue;
-    height: 300px;
+    height: 100%;
+    position: relative;
+
+    .main {
+      font-family: 'Amatic SC', cursive;
+      font-size: 150px;
+    }
+
+    .date {
+      font-family: 'Amatic SC', cursive;
+      font-size: 75px;
+    }
   }
 </style>

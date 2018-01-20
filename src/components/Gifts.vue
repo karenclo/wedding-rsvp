@@ -18,6 +18,7 @@ export default {
 <style>
   .gifts {
     background-color: aquamarine;
-    height: 300px;
+    height: 100%;
+    position: relative;
   }
 </style>

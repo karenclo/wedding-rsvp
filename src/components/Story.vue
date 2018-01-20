@@ -18,6 +18,7 @@ export default {
 <style>
   .story {
     background-color: bisque;
-    height: 300px;
+    height: 100%;
+    position: relative;
   }
 </style>

@@ -18,6 +18,7 @@ export default {
 <style>
   .travel-info {
     background-color: turquoise;
-    height: 300px;
+    height: 100%;
+    position: relative;
   }
 </style>
