@@ -10,20 +10,15 @@
           August 12, 2019!
         </span>
       </div>
-      <div class="form-fields">
-        <!--<ul>-->
-          <!--<li v-for="guest in guests" :key="guest.id">-->
-            <!--{{guest}}-->
-          <!--</li>-->
-        <!--</ul>-->
+      <div class="form-fields" v-if="!showGuestInfo">
         <div>
           Phone Number <input v-model="phoneNumber" placeholder="">
-          {{phoneNumber}}
           <br>
+          {{error}}
         </div>
         <button v-on:click="getGuestInfo">next</button>
       </div>
-      <div class="guest-info">
+      <div class="guest-info" v-if="showGuestInfo">
         Your Name: {{guestInfo.name}}
         <br>
         Your Guest: {{guestInfo.plusOne}}
@@ -33,6 +28,8 @@
         Staying at Hyatt Ziva Los Cabos? {{guestInfo.isStayingAtHyatt}}
         <br>
         Leave a message! {{guestInfo.message}}
+
+        <button v-on:click="getGuestInfo">done</button>
       </div>
     </div>
   </div>
@@ -51,7 +48,9 @@ let data = {
     isStayingAtHyatt: '',
     message: ''
   },
-  phoneNumber: ''
+  phoneNumber: '',
+  showGuestInfo: false,
+  error: ''
 }
 
 export default {
@@ -74,6 +73,10 @@ export default {
         this.guestInfo.isAttending = currGuest.isAttending
         this.guestInfo.isStayingAtHyatt = currGuest.isStayingAtHyatt
         this.guestInfo.message = currGuest.message
+
+        this.showGuestInfo = true
+      } else {
+        this.error = 'Oops! We couldn\'t find you!'
       }
     }
   }
