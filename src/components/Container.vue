@@ -53,7 +53,8 @@ export default {
     position: relative;
     #header {
       position: fixed;
-      top: 10px;
+      padding-top: 10px;
+      background-color: white;
       left: 0;
       width: 100%;
       margin: 0;
@@ -62,7 +63,6 @@ export default {
       ul {
         font-family: 'Josefin Slab', serif;
         display: block;
-        padding: 0;
         text-align: center;
 
       }

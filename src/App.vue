@@ -5,6 +5,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'App'
 }
@@ -13,10 +14,10 @@ export default {
 <style lang="scss">
 body, html {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 #app {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

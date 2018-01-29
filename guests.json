@@ -1,0 +1,18 @@
+{
+  "guests": {
+    "8588379022": {
+      "name": "Elina Kim",
+      "plusOne": "Matthew Hsieh",
+      "isAttending": "false",
+      "isStayingAtHyatt": "true",
+      "message": ""
+    },
+    "6193016679": {
+      "name": "Erica Hang",
+      "plusOne": "KoKo Lwin",
+      "isAttending": "false",
+      "isStayingAtHyatt": "true",
+      "message": ""
+    }
+  }
+}
