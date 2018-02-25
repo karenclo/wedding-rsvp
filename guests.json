@@ -4,15 +4,13 @@
       "name": "Elina Kim",
       "plusOne": "Matthew Hsieh",
       "isAttending": "false",
-      "isStayingAtHyatt": "true",
-      "message": ""
+      "isStayingAtHyatt": "true"
     },
-    "6193016679": {
+      "6193016679": {
       "name": "Erica Hang",
       "plusOne": "KoKo Lwin",
       "isAttending": "false",
-      "isStayingAtHyatt": "true",
-      "message": ""
+      "isStayingAtHyatt": "true"
     }
   }
 }

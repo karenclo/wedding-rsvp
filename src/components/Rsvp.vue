@@ -10,6 +10,8 @@
           August 12, 2019!
         </span>
       </div>
+      <br>
+
       <div class="form-fields" v-if="!showGuestInfo">
         <div>
           Phone Number <input v-model="phoneNumber" placeholder="">
@@ -23,13 +25,24 @@
         <br>
         Your Guest: {{guestInfo.plusOne}}
         <br>
-        Attending? {{guestInfo.isAttending}}
+        Attending?
+        <toggle-button
+          @change="onChangeAttendance"
+          :value="guestInfo.isAttending" :color="{checked: '#33D4FF', unchecked: '#919192'}" :sync="true" :labels="{checked: 'Yes!', unchecked: 'No'}">
+        </toggle-button>
+        {{guestInfo.isAttending}}
         <br>
-        Staying at Hyatt Ziva Los Cabos? {{guestInfo.isStayingAtHyatt}}
+        <div v-show="guestInfo.isAttending">
+          Staying at Hyatt Ziva Los Cabos?
+          <toggle-button
+            @change="onChangeStay"
+            :value="false" :color="{checked: '#33D4FF', unchecked: '#919192'}" :sync="true" :labels="{checked: 'Yes!', unchecked: 'No'}">
+          </toggle-button>
+        </div>
         <br>
-        Leave a message! {{guestInfo.message}}
 
-        <button v-on:click="getGuestInfo">done</button>
+        <br>
+        <button v-on:click="saveGuestInfo">done</button>
       </div>
     </div>
   </div>
@@ -45,8 +58,7 @@ let data = {
     name: '',
     plusOne: '',
     isAttending: '',
-    isStayingAtHyatt: '',
-    message: ''
+    isStayingAtHyatt: ''
   },
   phoneNumber: '',
   showGuestInfo: false,
@@ -72,12 +84,23 @@ export default {
         this.guestInfo.plusOne = currGuest.plusOne
         this.guestInfo.isAttending = currGuest.isAttending
         this.guestInfo.isStayingAtHyatt = currGuest.isStayingAtHyatt
-        this.guestInfo.message = currGuest.message
 
         this.showGuestInfo = true
       } else {
         this.error = 'Oops! We couldn\'t find you!'
       }
+    },
+
+    saveGuestInfo: function () {
+      this.showGuestInfo = false
+    },
+
+    onChangeAttendance: function () {
+      this.guestInfo.isAttending = !this.guestInfo.isAttending
+    },
+
+    onChangeStay: function () {
+      this.guestInfo.isStayingAtHyatt = !this.guestInfo.isStayingAtHyatt
     }
   }
 }

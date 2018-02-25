@@ -6,6 +6,9 @@ import VueFire from 'vuefire'
 import App from './App'
 import router from './router'
 
+import ToggleButton from 'vue-js-toggle-button'
+
+Vue.use(ToggleButton)
 Vue.use(VueFire)
 Vue.config.productionTip = false
 

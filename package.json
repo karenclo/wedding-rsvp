@@ -18,6 +18,7 @@
     "firebase": "^4.9.0",
     "normalize.css": "^7.0.0",
     "vue": "^2.5.13",
+    "vue-js-toggle-button": "^1.2.2",
     "vue-router": "^3.0.1",
     "vuefire": "^1.4.5"
   },
