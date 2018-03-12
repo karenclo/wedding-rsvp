@@ -183,6 +183,7 @@ export default {
     border-radius: 30px;
     margin-top: 35px;
     border-style: none;
+    background-color: white;
     font-size: 12px;
     font-family: 'Josefin Slab', serif;
 
