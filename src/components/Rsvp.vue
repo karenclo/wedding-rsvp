@@ -34,7 +34,7 @@
           <toggle-button class="toggle-btn"
             @change="onChangeAttendance"
             :value="guestInfo.isAttending" :color="{checked: '#3FE3A0', unchecked: '#919192'}" :sync="true"
-            :labels="{checked: 'Accept', unchecked: 'Decline'}" :width="77">
+            :labels="{checked: 'Accept', unchecked: 'Decline'}" :width="78">
           </toggle-button>
         </div>
         <div class="guest-field" v-show="guestInfo.isAttending">
@@ -189,7 +189,7 @@ export default {
   }
 
   .toggle-btn {
-    font-size: 14px;
+    font-size: 15px;
   }
 
 </style>
