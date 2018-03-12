@@ -1,16 +1,16 @@
 {
   "guests": {
+    "1234567890": {
+      "name": "Primary Guest",
+      "plusOne": "Plus One",
+      "isAttending": false,
+      "isStayingAtHyatt": true
+    },
     "8588379022": {
       "name": "Elina Kim",
       "plusOne": "Matthew Hsieh",
-      "isAttending": "false",
-      "isStayingAtHyatt": "true"
-    },
-      "6193016679": {
-      "name": "Erica Hang",
-      "plusOne": "KoKo Lwin",
-      "isAttending": "false",
-      "isStayingAtHyatt": "true"
+      "isAttending": false,
+      "isStayingAtHyatt": true
     }
   }
 }
