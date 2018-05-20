@@ -11,6 +11,12 @@
       "plusOne": "Matthew Hsieh",
       "isAttending": false,
       "isStayingAtHyatt": true
+    },
+    "3479263864": {
+      "name": "Josh Lee",
+      "plusOne": "Guest",
+      "isAttending": false,
+      "isStayingAtHyatt": true
     }
   }
 }

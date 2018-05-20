@@ -2,7 +2,7 @@
   <div class="home section">
     <div class="content">
       <div class="title">
-        Karen + Jonathan
+        Jonathan + Karen
       </div>
       <div class="date">
         10.12.2019
@@ -12,6 +12,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'Home'
 }
@@ -20,7 +21,11 @@ export default {
 <style lang="scss" scoped>
   @import '../stylesheets/header.scss';
   .home {
-    background-color: lightblue;
+    background-image:url('../assets/home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: lightblue;*/
     height: 100%;
     position: relative;
 
