@@ -2,6 +2,10 @@
   padding-top: 75px;
   .title {
     font-family: 'Amatic SC', cursive;
-    font-size: 150px;
+    font-size: 120px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 70px;
+    }
   }
 }

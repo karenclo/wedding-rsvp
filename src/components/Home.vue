@@ -25,9 +25,12 @@ export default {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /*background-color: lightblue;*/
     height: 100%;
     position: relative;
+
+    @media screen and (max-width: 1024px) {
+      background-image:url('../assets/home-mobile.jpg');
+    }
 
     .date {
       font-family: 'Amatic SC', cursive;
