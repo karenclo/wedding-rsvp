@@ -74,12 +74,12 @@ export default {
         font-size: 15px;
 
         &:hover {
-           color: white;
+           text-decoration: underline;
            cursor: pointer;
         }
 
         &:focus {
-          color: white
+           text-decoration: underline;
         }
       }
     }
